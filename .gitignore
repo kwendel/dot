@@ -34,10 +34,9 @@ Projects/
 .zcompdump
 .zcompdump-*
 
-# vim edit history
-.vim/files/backup/*
-.vim/files/swp/*
-.vim/files/undo/*
+# Vim edit history
+.vim/files/**
+!.vim/files/**/.gitkeep
 
 # Caches
 .cache/*
