@@ -177,3 +177,7 @@ function timeplugins() {
 
 # Dot files
 alias dt="/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME"
+alias dot="dt"
+alias dts="dt status"
+alias dtp="dt push"
+
