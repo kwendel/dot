@@ -1,0 +1,6 @@
+[submodule ".intellimacs"]
+	path = .intellimacs
+	url = git@github.com:MarcoIeni/intellimacs.git
+[submodule "dot-resources/iTerm2-Color-Schemes"]
+	path = dot-resources/iTerm2-Color-Schemes
+	url = git@github.com:mbadolato/iTerm2-Color-Schemes.git
