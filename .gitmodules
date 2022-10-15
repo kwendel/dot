@@ -4,3 +4,6 @@
 [submodule "dot-resources/iTerm2-Color-Schemes"]
 	path = dot-resources/iTerm2-Color-Schemes
 	url = git@github.com:mbadolato/iTerm2-Color-Schemes.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = git@github.com:ohmyzsh/ohmyzsh.git
