@@ -7,3 +7,24 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = git@github.com:ohmyzsh/ohmyzsh.git
+[submodule ".oh-my-zsh.custom/plugins/autoswitch_virtualenv/zsh-autoswitch-virtualenv"]
+	path = .oh-my-zsh.custom/plugins/autoswitch_virtualenv/zsh-autoswitch-virtualenv
+	url = https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git
+[submodule "/Users/kwendel/.oh-my-zsh.custom/plugins/autoswitch_virtualenv"]
+	path = /Users/kwendel/.oh-my-zsh.custom/plugins/autoswitch_virtualenv
+	url = https://github.com/MichaelAquilina/zsh-autoswitch-virtualenv.git
+[submodule "/Users/kwendel/.oh-my-zsh.custom/plugins/evalcache"]
+	path = /Users/kwendel/.oh-my-zsh.custom/plugins/evalcache
+	url = https://github.com/mroth/evalcache
+[submodule "/Users/kwendel/.oh-my-zsh.custom/plugins/zsh-autosuggestions"]
+	path = /Users/kwendel/.oh-my-zsh.custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "/Users/kwendel/.oh-my-zsh.custom/plugins/zsh-history-substring-search"]
+	path = /Users/kwendel/.oh-my-zsh.custom/plugins/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search
+[submodule "/Users/kwendel/.oh-my-zsh.custom/plugins/zsh-nvm"]
+	path = /Users/kwendel/.oh-my-zsh.custom/plugins/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm
+[submodule "/Users/kwendel/.oh-my-zsh.custom/plugins/zsh-syntax-highlighting"]
+	path = /Users/kwendel/.oh-my-zsh.custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git

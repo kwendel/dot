@@ -1,5 +1,6 @@
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
+export ZSH_CUSTOM="$HOME/.oh-my-zsh.custom"
 
 # zsh profiling
 # zmodload zsh/zprof
