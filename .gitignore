@@ -1,0 +1,43 @@
+# Gitignore for kwendel/dot
+
+# ignore self to avoid recursion
+.dot
+.gitmodules
+
+# macos stuff
+Applications/
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+.DS_Store
+.Trash
+.CFUserTextEncoding
+
+# Custom folders
+Projects/
+
+# Credentials and secrets
+.aspnet/DataPrection-Keys/*
+.aws/*
+!.aws/config
+.ssh/*
+
+# History dumps
+.python_history
+.zsh-session/*
+.zsh-history
+.zcompdump
+.zcompdump-*
+
+# vim edit history
+.vim/files/backup/*
+.vim/files/swp/*
+.vim/files/undo/*
+
+# Caches
+.cache/*
