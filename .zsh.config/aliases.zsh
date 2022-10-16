@@ -1,8 +1,8 @@
 # Dot files
 alias dot="lazygit --git-dir=$HOME/.dot/ --work-tree=$HOME"
 alias dotg="/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME"
-alias dots="dt status"
-alias dotp="dt push"
+alias dots="dotg status"
+alias dotp="dotg push"
 
 # Shortcuts
 alias doc="~/Documents/"
