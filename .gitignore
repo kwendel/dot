@@ -38,5 +38,13 @@ Projects/
 .vim/files/**
 !.vim/files/**/.gitkeep
 
-# Caches
-.cache/*
+# not important folders
+.cache
+.local
+.config
+.docker
+.npm
+.nvm
+.pyenv
+.zsh-session
+.zsh-evalcache
