@@ -30,3 +30,21 @@ function fs() {
 	fi;
 }
 
+# Extend brew:
+# - brew sync: update, upgrade and save brew bundle
+# - TODO: link brew to global python
+export HOMEBREW_NO_AUTO_UPDATE=1
+function brew() {
+    if [[ $1 == 'sync' ]]; then
+        brew update
+        brew upgrade
+        brew bundle --file=~/.brewfile --force dump
+        dotg add ~/.brewfile
+        # TODO: only commit if there were changes
+        dotg commit -m "$(date +%Y.%m.%d): update brewfile"
+        dotg push
+    else
+        command brew "$@";
+    fi
+}
+

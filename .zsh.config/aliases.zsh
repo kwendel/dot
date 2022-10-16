@@ -41,10 +41,6 @@ alias nvim=$EDITOR
 alias zshconfig="$EDITOR ~/.zshrc && exec zsh"
 alias reload="exec zsh"
 
-# Link brew to global python
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-export HOMEBREW_NO_AUTO_UPDATE=1
-
 # Shortcut for lazygit and lazydocker
 alias lg="lazygit"
 alias ld="lazydocker"
