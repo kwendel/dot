@@ -13,4 +13,4 @@ _evalcache thefuck --alias
 source ~/.zsh.config/fzf.zsh
 
 # iterm2 integrations
-source "${HOME}/.iterm2_shell_integration.zsh"
+source ~/.zsh.config/iterm2_shell_integration.zsh

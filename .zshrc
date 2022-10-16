@@ -1,3 +1,6 @@
+# TODO: use this variable during  sourcing
+export ZSH_CONFIG="~/.zsh.config"
+
 # Enable for debugging zsh start-up
 # source ~/.zsh.config/debug.zsh
 
