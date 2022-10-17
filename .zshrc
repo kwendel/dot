@@ -14,6 +14,7 @@ source ~/.zsh.config/oh-my-zsh.zsh
 source ~/.zsh.config/p10k.zsh
 
 # TODO: source ~/.zsh.config/exports.zsh
+# TODO: cdk autocomplete is terrible slow: source ~/.zsh.config/autocomplete.zsh
 source ~/.zsh.config/aliases.zsh
 source ~/.zsh.config/plugins.zsh
 source ~/.zsh.config/functions.zsh
