@@ -38,7 +38,7 @@ alias vim=$EDITOR
 alias nvim=$EDITOR
 
 # Config editing
-alias zshconfig="$EDITOR ~/.zshrc && exec zsh"
+alias zshrc="$EDITOR ~/.zshrc && exec zsh"
 alias reload="exec zsh"
 
 # Shortcut for lazygit and lazydocker
@@ -54,3 +54,21 @@ alias ll='ls -lbhHigUmuSa' # all list
 alias lx='ls -lbhHigUmuSa@' # all list and extended
 alias tree='exa --tree' # tree view
 alias lS='exa -1' # one column by just names
+
+# bat as cat
+alias cat='bat'
+
+# Command line head / tail shortcuts
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/common-aliases
+alias -g H='| head'
+alias -g T='| tail'
+alias -g G='| grep'
+alias -g L="| less"
+alias -g M="| most"
+alias -g LL="2>&1 | less"
+alias -g CA="2>&1 | cat -A"
+alias -g NE="2> /dev/null"
+alias -g NUL="> /dev/null 2>&1"
+alias -g P="2>&1| pygmentize -l pytb"
+
+

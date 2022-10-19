@@ -23,10 +23,13 @@ export NVM_LAZY_LOAD=true
 
 # Plugins enabled
 plugins=(
-    # Git
+    # tools
     git	
     gitignore
     gitfast
+    docker
+    docker-compose
+    jsontools
     # envs
     dotenv
     zsh-nvm
@@ -36,11 +39,16 @@ plugins=(
     macos
     vi-mode
     colored-man-pages
+    copyfile
+    copypath
     # zsh shell 
     evalcache
+    safe-paste
+    sudo
     zsh-autosuggestions
-    zsh-syntax-highlighting
     zsh-history-substring-search
+    zsh-syntax-highlighting
+
 )
 source $ZSH/oh-my-zsh.sh
 
