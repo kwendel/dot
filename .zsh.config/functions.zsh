@@ -40,9 +40,11 @@ function brew() {
         brew upgrade
         brew bundle --file=~/.brewfile --force dump
         dotg add ~/.brewfile
-        # TODO: only commit if there were changes
-        dotg commit -m "$(date +%Y.%m.%d): update brewfile"
-        dotg push
+        if [[ `dotg status --porcelain` ]]; then
+            # Changes
+            dotg commit -m "$(date +%Y.%m.%d): update brewfile"
+            dotg push
+        fi
     else
         command brew "$@";
     fi

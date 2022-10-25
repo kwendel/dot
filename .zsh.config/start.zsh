@@ -15,6 +15,12 @@ for dump in ~/.zcompdump(N.mh+24); do
 done
 compinit -C
 
+# Expand alias with tab
+bindkey "^Xa" _expand_alias
+zstyle ':completion:*' completer _expand_alias _complete _ignored
+zstyle ':completion:*' regular true
+
+
 # Auto-update behavior
 # zstyle ':omz:update' mode disabled  	# disable automatic updates
 # zstyle ':omz:update' mode auto      	# update automatically without asking
