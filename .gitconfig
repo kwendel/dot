@@ -20,7 +20,7 @@
 	autocrlf = input
 	editor = vim
 	# Don't paginate output by default
-    pager = cat
+	pager = diff-so-fancy | less --tabs=4 -RFX
     # Global ignore file (not shared)
     excludesfile = ~/.gitignore_global
     # Global shared hooks directory
@@ -31,6 +31,7 @@
 
 [interactive]
 	singlekey = true
+	diffFilter = diff-so-fancy --patch
 
 [log]
     # Use abbrev SHAs whenever possible/relevant instead of full 40 chars
@@ -44,3 +45,18 @@
 [push]
     # Default push should only push the current branch to its push target, regardless of its remote name
     default = upstream
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[diff-so-fancy]
+	markEmptyLines = false
