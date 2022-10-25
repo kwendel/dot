@@ -3,18 +3,17 @@
 	email = kasper.wendel@postnl.nl
 
 [alias]
-	uncommit = reset --soft HEAD~1
 	unstage = reset
-	# Display tree-like log, because default log is a pain…
+    # Remove last commit but keep changes
+	uncommit = reset --soft HEAD~1
+	# Display tree-like git log
     lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
-    # Add without editing msg
+    # Add change without editing msg
     oops = commit --amend --no-edit
     reword = commit --amend
     # Remove file(s) from Git but not from disk
     untrack = rm --cache --
 
-[color]
-	ui = true
 
 [core]
 	autocrlf = input
@@ -22,9 +21,13 @@
 	# Don't paginate output by default
 	pager = diff-so-fancy | less --tabs=4 -RFX
     # Global ignore file (not shared)
-    excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore.global
     # Global shared hooks directory
     # hooksPath = ~/.githooks
+
+[push]
+    # Default push should only push the current branch to its push target, regardless of its remote name
+    default = upstream
 
 [grep]
 	lineNumber = true
@@ -42,14 +45,15 @@
 	rename = copy
 	#tool=
 
-[push]
-    # Default push should only push the current branch to its push target, regardless of its remote name
-    default = upstream
+[color]
+	ui = true
+
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+
 [color "diff"]
 	meta = 11
 	frag = magenta bold
@@ -58,5 +62,6 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+
 [diff-so-fancy]
 	markEmptyLines = false
