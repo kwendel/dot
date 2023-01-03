@@ -23,3 +23,7 @@ node_modules
 
 # Intelij 
 .idea
+
+# Always ignore python venvs
+.venv
+venv

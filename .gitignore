@@ -48,3 +48,5 @@ Projects/
 .pyenv
 .zsh-session
 .zsh-evalcache
+.tldrc
+

@@ -1,5 +1,12 @@
+# Set LPE aws profile using: lpe <lpe-profile>
+function lpe(){
+    export AWS_PROFILE=$1
+    return 0
+}
+
 # Set aws profile using aws-mfa with: mfa <profile>
 function mfa(){
+
     # request temporary credentials with global python version
     $PYENV_ROOT/versions/3.9.11/bin/aws-mfa --duration 129600 --profile $1
    

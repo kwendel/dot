@@ -28,6 +28,7 @@
 [push]
     # Default push should only push the current branch to its push target, regardless of its remote name
     default = upstream
+	autoSetupRemote = true
 
 [grep]
 	lineNumber = true
