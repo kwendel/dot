@@ -57,3 +57,22 @@ function brew() {
     fi
 }
 
+function git() {
+    # Only capture empty "git checkout" commands
+    if [[ "$1" == 'checkout' && -z "$2" ]]; then
+        # Fuzzy search the branches with fzf
+        BRANCH=$(git branch -a -vv --color=always | 
+            grep -v '/HEAD\s' | 
+            fzf --height 30% --ansi --multi --tac | 
+            sed 's/^..//' | 
+            awk '{print $1}' |
+            sed 's#^remotes/[^/]*/##'
+        )
+        # Execute command and put it in the zsh history
+        command git checkout "$BRANCH";
+        print -s "git checkout ${BRANCH}"
+    else
+        command git "$@";
+    fi
+}
+
