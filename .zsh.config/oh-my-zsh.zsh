@@ -1,4 +1,5 @@
-# Export config folders
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$HOME/.oh-my-zsh.custom"
 
@@ -14,8 +15,9 @@ HYPHEN_INSENSITIVE="true" 		# hyphen-insensitive completion. Case-sensitive comp
 # ZSH_CUSTOM=/path/to/new-custom-folder # Would you like to use another custom folder than $ZSH/custom?
 ZSH_TIME="24"
 
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Set oh-my-zsh options before sourcing oh-my-zsh.zsh 
+DEFAULT_USER=$(whoami)
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Plugins config 
 export NVM_COMPLETION=true
@@ -27,8 +29,6 @@ plugins=(
     python
     pyenv
     poetry # custom completions
-    # autoswitch_virtualenv. trying direnv
-    direnv
     # tools
     git	
     gitignore
@@ -37,7 +37,7 @@ plugins=(
     docker-compose
     jsontools
     # envs
-    #dotenv
+    direnv
     zsh-nvm
     # others
     macos

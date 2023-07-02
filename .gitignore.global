@@ -27,3 +27,7 @@ node_modules
 # Always ignore python venvs
 .venv
 venv
+
+# Always ignore .envrc for direnv as they can contain user secrets
+.envrc
+
