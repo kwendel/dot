@@ -7,7 +7,7 @@ command -v pyenv > /dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # Python thefuck plugin
-_evalcache thefuck --alias     
+eval "$(thefuck --alias)"
 
 # Enable fzf fuzzy search on command search (ctrl+r) or file search (ctrl+t)
 source ~/.zsh.config/fzf.zsh

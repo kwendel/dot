@@ -23,6 +23,12 @@ export NVM_LAZY_LOAD=true
 
 # Plugins enabled
 plugins=(
+    # python dev tools
+    python
+    pyenv
+    poetry # custom completions
+    # autoswitch_virtualenv. trying direnv
+    direnv
     # tools
     git	
     gitignore
@@ -31,10 +37,8 @@ plugins=(
     docker-compose
     jsontools
     # envs
-    dotenv
+    #dotenv
     zsh-nvm
-    pyenv
-    autoswitch_virtualenv
     # others
     macos
     vi-mode

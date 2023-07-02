@@ -3,10 +3,10 @@ export ZSH_CONFIG="$HOME/.zsh.config"
 files=(
     # "$ZSH_CONFIG/debug.zsh"       # Enable for profiling zsh start-up
     "$ZSH_CONFIG/start.zsh"         # ZSH options
+    "$ZSH_CONFIG/plugins.zsh"       # shell plugins
     "$ZSH_CONFIG/oh-my-zsh.zsh"     # Init oh-my-zsh
     "$ZSH_CONFIG/p10k.zsh"          # powerlevel10k theme
     "$ZSH_CONFIG/aliases.zsh"       # aliases
-    "$ZSH_CONFIG/plugins.zsh"       # shell plugins
     "$ZSH_CONFIG/functions.zsh"     # custom functions
     "$ZSH_CONFIG/iterm2_shell_integration.zsh"
     # TODO: seperate file for exports?
