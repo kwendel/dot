@@ -3,8 +3,8 @@ export ZSH_EVALCACHE_DIR=$HOME/.config/zsh/evalcache
 
 # Pyenv shims setup
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+command -v pyenv > /dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # Python thefuck plugin
 _evalcache thefuck --alias     

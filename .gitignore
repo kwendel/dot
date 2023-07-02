@@ -38,8 +38,15 @@ Projects/
 .vim/files/**
 !.vim/files/**/.gitkeep
 
+# Vscode config
+!Library/Application*Support/Code/User/*.json
+.vscode
+
+
 # not important folders
+.android
 .cache
+.cdk
 .local
 .config
 .docker
@@ -49,4 +56,12 @@ Projects/
 .zsh-session
 .zsh-evalcache
 .tldrc
+.lpass
+.nix-*
+.colima
+.lima
+.cups
+.ipython
+
+
 

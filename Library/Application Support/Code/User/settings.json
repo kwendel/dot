@@ -1,0 +1,70 @@
+{
+    "[python]": {
+        "editor.formatOnType": true,
+        // "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": true,
+    "python.formatting.provider": "black",
+    "workbench.colorTheme": "JetBrains Darcula Theme",
+    "cSpell.userWords": [
+        "boto",
+        "postnl",
+        "SFMC",
+        "statemachine",
+        "stepfunction",
+        "stepfunctions"
+    ],
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        }
+    ],
+    "workbench.editor.enablePreview": false
+}

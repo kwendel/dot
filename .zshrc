@@ -25,6 +25,7 @@ for file in $files; do
         source "$file"
     fi
 done
+
 unset file
 unset files 
 
