@@ -2,7 +2,9 @@ function lpe(){
 `
 # Set LPE aws profile using: lpe <lpe-profile>
 `
-    export AWS_PROFILE=$1
+    eval $(aws configure export-credentials --profile $1 --format env)
+    echo "AWS session set for ${1}. Valid until ${AWS_CREDENTIAL_EXPIRATION}"
+    export AWS_DEFAULT_REGION='eu-west-1'
     return 0
 }
 
@@ -89,20 +91,5 @@ function git() {
     else
         command git "$@";
     fi
-}
-
-function envrc() {
-`
-# Append common settings to .envrc and allow them.
-# - envrc poetry: layout poetry in .envrc
-# - envrc node <version>: use nvm <version> in .envrc
-`
-    if [[ "$1" == 'poetry' ]]; then
-        echo "layout poetry" >> .envrc; 
-    elif [[ "$1" == 'node' ]]; then
-        echo "use nvm ${2}" >> .envrc;
-    fi
-
-    direnv allow .;
 }
 
