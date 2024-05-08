@@ -41,7 +41,6 @@ plugins=(
     zsh-nvm
     # others
     macos
-    vi-mode
     colored-man-pages
     copyfile
     copypath
@@ -61,3 +60,12 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
+
+# Enable vim commands manually instead of vi-mode since that breaks p10k 
+# transiet mode. see https://github.com/romkatv/powerlevel10k/issues/1952#issuecomment-1603722745
+bindkey -v
+
+# allow vv to edit the command line (standard behaviour)
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd 'vv' edit-command-line
